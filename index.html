@@ -483,19 +483,107 @@ const BRANDS = [
 // ITEMS — add your items here! Format:
 // { brand: 'brand_id', name: 'Item Name', cat: 'Category', emoji: '👕', link: 'https://cnfans.com/...' }
 const ITEMS = [
-  // EXAMPLE ITEMS — replace these with real CNFans product links
-  { brand: 'lv', name: 'LV Monogram Tee', cat: 'Shirts', emoji: '👕', link: AFFILIATE },
-  { brand: 'lv', name: 'LV Damier Hoodie', cat: 'Hoodies', emoji: '🧥', link: AFFILIATE },
-  { brand: 'lv', name: 'LV Cap', cat: 'Hats', emoji: '🧢', link: AFFILIATE },
-  { brand: 'gucci', name: 'Gucci GG Tee', cat: 'Shirts', emoji: '👕', link: AFFILIATE },
-  { brand: 'gucci', name: 'Gucci Monogram Shorts', cat: 'Shorts', emoji: '🩳', link: AFFILIATE },
-  { brand: 'balenciaga', name: 'Balenciaga Oversized Tee', cat: 'Shirts', emoji: '👕', link: AFFILIATE },
-  { brand: 'balenciaga', name: 'Balenciaga Track Pants', cat: 'Pants', emoji: '👖', link: AFFILIATE },
-  { brand: 'balenciaga', name: 'Balenciaga Speed Sneakers', cat: 'Accessories', emoji: '👟', link: AFFILIATE },
-  { brand: 'prada', name: 'Prada Logo Hoodie', cat: 'Hoodies', emoji: '🧥', link: AFFILIATE },
-  { brand: 'dior', name: 'Dior Oblique Shirt', cat: 'Shirts', emoji: '👕', link: AFFILIATE },
-  { brand: 'rick', name: 'Rick Owens DRKSHDW Tee', cat: 'Shirts', emoji: '👕', link: AFFILIATE },
-  { brand: 'rick', name: 'Rick Owens Cargo Pants', cat: 'Pants', emoji: '👖', link: AFFILIATE },
+  // ===== BALENCIAGA =====
+  // SHIRTS
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Tee White', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc1e7be1d1f7fe3f5a32_652d182be70ec3ef86f8ead3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga AW17 Paris Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc10b00b90c81bfda8ba_652d1802d3a9ff43b35e5e36_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-aw17-paris-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Blue Logo Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc1665e4abce1bf17c3f_652d181c52c55e6a3ba2e2ea_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-blue-logo-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Boxy Side Striped Sporty B Logo Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc2a25218e48bc394c14_652d184365a75e68b6cfbfb3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-boxy-side-striped-sporty-b-logo-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Embroidered Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc229c7fa7a4e1e3d924_652d18285be5bcf3b8ce4c32_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-embroidered-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Football Jersey Black', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/68a1fe1442fe62359f4dddeb_672d1655297e1420f7e5d95d_balenciaga-black-Barcelona-socce_result.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-football-jersey' },
+  { brand: 'balenciaga', name: 'Balenciaga Football Jersey Neon Green', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/68a1fe14ff79ea4054eb9803_672d178b496be95a47714ec8_balenciaga-football-series-2024_result.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-football-jersey-neon-green' },
+  { brand: 'balenciaga', name: 'Balenciaga Football Jersey Pink', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc2363cebbbba630f1f7_652d182e2e23d64de5b29fd9_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-football-jersey-pink' },
+  { brand: 'balenciaga', name: 'Balenciaga Football Jersey Red', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc2a9c7fa7a4e1e3d966_652d183530d84e3f68a7e7e0_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-football-jersey-red' },
+  { brand: 'balenciaga', name: 'Balenciaga Fortnite Tee (3 Colors)', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc3425218e48bc394db0_652d18490c31bb7eb34a8a78_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-fortnite-tee-3-colors' },
+  { brand: 'balenciaga', name: 'Balenciaga I Love Cats Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc40e0fc68c40ae27d81_652d18565e17e7fd7dfd4c30_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-i-love-cats-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Metal Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc4563cebbbba630fba5_652d185c2fcce1c08bb67dd3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-metal-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Offshore Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc3663cebbbba630fa1c_652d184c7a3e3bf71e8f6f40_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-offshore-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Paris Moon Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc4de72ac6b4c7b578ef_652d18633cfc77dbf4e3d27d_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-paris-moon-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Polo Shirt Navy', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc537be1d1f7fe3f5b90_652d186a85bf63e16ac1da4e_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-polo-shirt-navy' },
+  { brand: 'balenciaga', name: 'Balenciaga PS5 Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc567be1d1f7fe3f5bc0_652d186fce44e3d226d9f88a_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-ps5-tee' },
+  { brand: 'balenciaga', name: 'Balenciaga Rammstein Tee', cat: 'Shirts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc59e72ac6b4c7b579f8_652d18741ee9a0ad7e6b1ef0_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-rammstein-tee' },
+
+  // HOODIES
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Outerwear Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc4a63cebbbba630fe3b_6564ed30c2b46c49a9ca5cd2_Balenciaga-3B-Sports-Outerwear-Zip-Up-Hoodie-Blackconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-outerwear-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Authentic Jersey Apparel Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbed205d38018371d54e_652d18f7e48cbbb424d9c826_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-authentic-jersey-apparel-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Be Different Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbf7e8a24e0a6fcee39f_652d190e1caea36ee23f3892_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-be-different-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Blue Polo Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbd52d9e1c2c0fad62e7_652d18dd70f16048fdad86a2_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-blue-polo-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Campaign Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbd9fc72c0ac8c90b6bd_652d18e32c5be7f1b7f4fe22_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-campaign-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Campaign Hoodie Beige', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbdfe8a24e0a6fcee20a_652d18e98d9d90b601d19bac_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-campaign-hoodie-beige' },
+  { brand: 'balenciaga', name: 'Balenciaga Destroyed Dual Layer Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbfe205d38018371d623_652d1907a84c5af42fc08de3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-destroyed-dual-layer-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Dirty Blue Polo Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbd6aaf54bcab00c44c8_652d18df64c1dde765a4d5bc_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-dirty-blue-polo-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Embroidered Hoodie Black', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc08e72ac6b4c7b576a2_652d17fad3cfaeac573ab218_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-embroidered-hoodie-black' },
+  { brand: 'balenciaga', name: 'Balenciaga Embroidered Hoodie Brown', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc0db72e0c97af27e6cf_652d180111ebc9e53ddd38dd_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-embroidered-hoodie-brown' },
+  { brand: 'balenciaga', name: 'Balenciaga Grey Washed Sporty Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc03e72ac6b4c7b57586_652d17f73af37e5c4b6b9b6e_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-grey-washed-sporty-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Heavy Metal Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc3a205d38018371cb73_652d18507a4e9e0a3b8c70da_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-heavy-metal-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Off Shore Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbf4fc72c0ac8c90b31c_652d190418c1a8a6cf3e8f00_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-off-shore-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Pink Polo Zip-Up Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbdb29adffbb2a81d2f7_652d18e5a4ede3e5e61b6dd7_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-pink-polo-zip-up-hoodie' },
+  { brand: 'balenciaga', name: 'Balenciaga Rammstein Hoodie', cat: 'Hoodies', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbfb72bb2a38d0d94f17_652d1911fcf07e4ab5b93a71_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-rammstein-hoodie' },
+
+  // PANTS
+  { brand: 'balenciaga', name: 'Balenciaga 3B Nylon Tracksuit Pants', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d072bab85ccecdac7006_6661d072bab85ccecdac7006_654933696009114c605b5d75_Medium-704715TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-nylon-tracksuit-pants' },
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sporty Track Sweatpants', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d099e5f7b7c88a7abc63_654934000a56a64553e62c00_Medium-704716TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sporty-track-sweat-pants' },
+  { brand: 'balenciaga', name: 'Balenciaga Baggy Black Sweatpants', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d091a16fec0f9e14df4b_6549340e0e52e29b94c79d73_Medium-704713TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-baggy-black-sweatpants' },
+  { brand: 'balenciaga', name: 'Balenciaga Cargo Pants', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d066e3c7a1e0c64f3ead_652d26e6a22e36bc88481b78_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-cargo-pants' },
+  { brand: 'balenciaga', name: 'Balenciaga Double Waisted Sweatpants Black', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d094c7e7a2f05fcf68d5_65493413ad6a80fb9d8a53a9_Medium-704714TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-double-waisted-sweatpants-black' },
+  { brand: 'balenciaga', name: 'Balenciaga Double Waisted Sweatpants Grey', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d09dc0a9b524a87e5af7_654934200e52e29b94c79ddc_Medium-704720TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-double-waisted-sweatpants-grey' },
+  { brand: 'balenciaga', name: 'Balenciaga Raver Baggy Pants Washed Black', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d07bc0a9b524a87e57c3_6549337ed8ed4bed76d14f56_Medium-706683TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-raver-baggy-pants-washed-black' },
+  { brand: 'balenciaga', name: 'Balenciaga Raver Baggy Pants Washed Blue', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d083e3c7a1e0c64f4023_654933896b78f024a28f4dfe_Medium-706684TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-raver-baggy-pants-washed-blue' },
+
+  // JEANS (Pants category)
+  { brand: 'balenciaga', name: 'Balenciaga Baggy Black Graffiti Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d05c9c7fa7a4e1e3e1fd_652d26dd5b7b6f8e5671d1ac_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-baggy-black-grafitti-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Baggy White Distressed Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d04de3c7a1e0c64f3d2c_652d26c3caef2f31e9aeef9b_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-baggy-white-distressed-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Blue Lost Tape Flared Denim Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d025c48069a95e327289_652d2706c3b7a70b0e6e5697_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-blue-lost-tape-flared-denim-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Convertible Cargo Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d074bab85ccecdac7085_654933736b78f024a28f4ded_Medium-706680TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-convertible-cargo-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Cut Up Jeans Black', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d034c48069a95e32732c_652d271eccec47cedd4c7b33_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-cut-up-jeans-black' },
+  { brand: 'balenciaga', name: 'Balenciaga Cut Up Jeans Blue', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d02de3c7a1e0c64f3bc9_652d2715e4fefa85ea15e92f_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-cut-up-jeans-blue' },
+  { brand: 'balenciaga', name: 'Balenciaga Destroyed Mud Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d038c48069a95e327370_652d2724a4e5c6a3d36aca9b_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-destroyed-mud-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Distressed Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d030bab85ccecdac6a89_652d271937393b2bff69cfcc_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-distressed-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga Lost Tape Flared Denim Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0209c7fa7a4e1e3e6fb_652d26ff201ce77a34f12990_984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-flared-denim-jeans' },
+  { brand: 'balenciaga', name: 'Balenciaga George V Baggy Jeans', cat: 'Pants', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0559c7fa7a4e1e3e085_652d26d1a9c29fa79b03a74e_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-george-v-baggy-jeans' },
+
+  // SHORTS
+  { brand: 'balenciaga', name: 'Balenciaga Gamer Shorts', cat: 'Shorts', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d06ae3c7a1e0c64f3f26_652d26ebfa78a5ded0c59f45_0984unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-gamer-shorts' },
+
+  // HATS
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Beanie', cat: 'Hats', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6956d794f7f11199c447982f_67293a24ffae37b6d7b3af49_pcitem1744628422-0e400000018ce41da5bc0a210349_1000_1000_result.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-beanie' },
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Cap', cat: 'Hats', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/66da35a9669edb4c4a256211_66cf82461208efc632973f54_953169_01.jpg_result.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-cap' },
+  { brand: 'balenciaga', name: 'Balenciaga FBI Cap', cat: 'Hats', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0a0bab85ccecdac73d8_65493448e74b1b3bf9892561_Medium-696822TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-fbi-cap' },
+  { brand: 'balenciaga', name: 'Balenciaga Gamer Embroidered Hat', cat: 'Hats', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0a9e6ad30f53c55c622_654934619f4c2cd76fb2ee42_Medium-700483TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-gamer-embroidered-hat' },
+
+  // JACKETS (Misc)
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Light Bomber Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc6563cebbbba6310a12_6564ede28d408b09af279452_Balenciaga-3B-Sports-Icon-Light-Bomber-Jacket-Blackconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-light-bomber-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Ski Puffer Black', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d080e3c7a1e0c64f40ca_654933ee95d37e8d86882e73_Medium-704686TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-ski-puffer-black' },
+  { brand: 'balenciaga', name: 'Balenciaga 3B Sports Icon Ski Puffer White', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d08bc0a9b524a87e5b31_654933e2ab56f30e8f10ac70_Medium-704685TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3b-sports-icon-ski-puffer-white' },
+  { brand: 'balenciaga', name: 'Balenciaga 7 Layer Parka', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc5b8af11c1c72124dc6_6564edadcac62765fc7a09be_Balenciaga-7-Layer-Parka-Black-and-Yellowconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-7-layer-parka' },
+  { brand: 'balenciaga', name: 'Balenciaga All In Bomber Jacket Beige', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc712d9e1c2c0fad6e37_652d1a53f16c7b56e1e82a6f_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-all-in-bomber-jacket-beige' },
+  { brand: 'balenciaga', name: 'Balenciaga Brown Bomber Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc7765e4abce1bf18a1e_652d1a69ae49f3c0efcc9c28_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-brown-bomber-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Metal Hooded Bomber Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc7f8af11c1c72124ed8_652d1a7bb5e8e93f52c95440_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-metal-hooded-bomber-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Motorcycle Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc858af11c1c72124f44_652d1a879e55c0a0083cc82b_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-motorcycle-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga NASA Astronaut Down Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc8b63cebbbba630f5a1_652d1a94bb2da3df5e4dde88_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-nasa-astronaut-down-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Oversized-Cut Hoodie Bomber Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc718af11c1c72124c30_652d1a5ba1ae6e487e1d09b9_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-oversized-cut-hoodie-bomber-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Oversized Distressed Heavy Bomber Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc9163cebbbba630f659_652d1a9f8bc2dfb5db87f9b1_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-oversized-distressed-heavy-bomber-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Padded Denim Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc978af11c1c72124f44_652d1aaa1a39e3fd9ae9f8c0_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-padded-denim-jacket' },
+  { brand: 'balenciaga', name: 'Balenciaga Paris Soccer Tracksuit Jacket', cat: 'Misc', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cc9e8af11c1c721250c4_652d1ab630a6e1b52cd95e1a_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-paris-soccer-tracksuit-jacket' },
+
+  // SHOES / ACCESSORIES
+  { brand: 'balenciaga', name: 'Balenciaga 3XL Ski Sneaker (5 Colorways)', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbabe3a2e7e7c30d5ba1_652d18d3d2e01fc97a49f9c6_0001unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3xl-ski-sneaker-5-colorways' },
+  { brand: 'balenciaga', name: 'Balenciaga 3XL Sneaker (12 Colorways)', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbe1a1f4f2e5f22add73_652d18e9b62af154c4c80872_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-3xl-sneaker-12-colorways' },
+  { brand: 'balenciaga', name: 'Balenciaga Alaska Fur Boots (9 Variants)', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cba16cbbb77d54cc4853_652d18caaabf5024d5c3ff8a_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-alaska-fur-boots-9-variants' },
+  { brand: 'balenciaga', name: 'Balenciaga Alaska Ski Boots Black', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cb99ad0deb4d5cce12b6_652d18c29c04e2e8c413c3e3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-alaska-ski-boots-black' },
+  { brand: 'balenciaga', name: 'Balenciaga Alaska Ski Boots White', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cb8f1d08ebf4c1ac0fdd_652d18bae3dae028e82afd03_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-alaska-ski-boots-white' },
+  { brand: 'balenciaga', name: 'Balenciaga Belt #1', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0b3e6ad30f53c55c78b_6549346d6e8929fc1f63a9f2_Medium-716424TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-belt' },
+  { brand: 'balenciaga', name: 'Balenciaga Belt #2', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0be9a1d8dba6b32ef64_654934845a2b03e019a5c695_Medium-716425TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-belt-2' },
+  { brand: 'balenciaga', name: 'Balenciaga Biker Gloves', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0a5e6ad30f53c55c5af_654934576e8929fc1f63a979_Medium-696823TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-biker-gloves' },
+  { brand: 'balenciaga', name: 'Balenciaga Bulldozer Boots', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbae29adffbb2a81cf5e_652d18d6db3f5d3e48b6bbb3_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-bulldozer-boots' },
+  { brand: 'balenciaga', name: 'Balenciaga Cargo Sneaker (8 Colorways)', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbbb8b46e7e4b9ad88ad_652d18e38ee7c91ef86e65e7_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-cargo-sneaker-8-colorways-xa-batch' },
+  { brand: 'balenciaga', name: 'Balenciaga Combat Canvas Strike Boots', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbc42fdd63dbc4b19695_652d18ec65a2be2e9d1cde63_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-combat-canvas-strike-boots' },
+  { brand: 'balenciaga', name: 'Balenciaga Defender (10 Colors)', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbf12d9e1c2c0fad6498_652d18fe2b04a2ee02bbef50_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-defender-10-colors' },
+  { brand: 'balenciaga', name: 'Balenciaga Furry Slides', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbd0a16fec0f9e14da73_652d18d81bdbeefba6dc1ddb_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-furry-slides' },
+  { brand: 'balenciaga', name: 'Balenciaga Khaki Strike Boots', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbc9b3c4dba6ae9bf36a_652d18f13196e38a1cf39d55_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-khaki-strike-boots' },
+  { brand: 'balenciaga', name: 'Balenciaga Passport Holder', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661d0c8aaf54bcab00c50b6_654934a01aa10de7e7d9b756_Medium-716432TKO481000_Fconverted.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-passport-holder' },
+  { brand: 'balenciaga', name: 'Balenciaga Platform Crocs', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbccbab85ccecdac5c1c_652d18d5b03b87b04e48ff66_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-platform-crocs' },
+  { brand: 'balenciaga', name: 'Balenciaga Pool Slides', cat: 'Accessories', img: 'https://assets.cnfanssheets.com/666083805164f00706747018/6661cbc6ad0deb4d5cce10b0_652d18ef8daa72e98d8c9c72_0270unnamed.webp', link: 'https://www.cnfanssheets.com/products/balenciaga-pool-slides' },
 ];
 
 // ===== STATE =====
@@ -530,7 +618,7 @@ function renderFeatured(cat) {
     const brand = BRANDS.find(b => b.id === item.brand);
     return `
     <a class="product-card" href="${item.link}" target="_blank">
-      <div class="product-img"><span>${item.emoji}</span></div>
+      <div class="product-img">${item.img ? `<img src="${item.img}" alt="${item.name}" onerror="this.parentElement.innerHTML='🛍️'">` : '<span>🛍️</span>'}</div>
       <div class="product-info">
         <div class="product-brand">${brand ? brand.name : item.brand}</div>
         <div class="product-name">${item.name}</div>
@@ -580,7 +668,7 @@ function handleSearch() {
     const brand = BRANDS.find(b => b.id === item.brand);
     return `
     <a class="product-card" href="${item.link}" target="_blank">
-      <div class="product-img"><span>${item.emoji}</span></div>
+      <div class="product-img">${item.img ? `<img src="${item.img}" alt="${item.name}" onerror="this.parentElement.innerHTML='🛍️'">` : '<span>🛍️</span>'}</div>
       <div class="product-info">
         <div class="product-brand">${brand ? brand.name : item.brand}</div>
         <div class="product-name">${item.name}</div>
@@ -637,7 +725,7 @@ function renderBrandItems(cat) {
   empty.style.display = 'none';
   grid.innerHTML = brandItems.map(item => `
     <a class="product-card" href="${item.link}" target="_blank">
-      <div class="product-img"><span>${item.emoji}</span></div>
+      <div class="product-img">${item.img ? `<img src="${item.img}" alt="${item.name}" onerror="this.parentElement.innerHTML='🛍️'">` : '<span>🛍️</span>'}</div>
       <div class="product-info">
         <div class="product-brand">${item.cat}</div>
         <div class="product-name">${item.name}</div>
