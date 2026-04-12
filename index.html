@@ -452,7 +452,7 @@ var PRODUCTS = [
   { brand: 'Acne Studios', name: 'Acne Ash black 1989', cat: 'Accessories', src: { type: 'taobao', id: '1007906839760' }, img: 'Images/Acne Ash black 1989.png', qc: 'https://mvt-shop01.x.yupoo.com/albums/214484112?uid=1' },
   { brand: 'Balenciaga', name: 'Balenciaga leather jacket', cat: 'Jackets', src: { type: 'taobao', id: '1007906839760' }, img: 'Images/Balenc leather jacket .png', qc: 'https://mvt-shop01.x.yupoo.com/albums/213868230?uid=1' },
   { brand: 'Balenciaga', name: 'BLCG tab zip hoodie', cat: 'Hoodies', src: { type: 'taobao', id: '1005574889461' }, img: 'Images/BLCG tab zip hoodie.png', qc: 'https://mvt-shop01.x.yupoo.com/albums/206881190?uid=1' },
-  { brand: 'Maison Margiela', name: 'MMgats (japan)', cat: 'Accessories', src: { type: 'taobao', id: '1027022473692' }, img: 'images/MMgats (japan).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/209422578?uid=1' },
+  { brand: 'Maison Margiela', name: 'MMgats (japan)', cat: 'Accessories', src: { type: 'taobao', id: '1027022473692' }, img: 'Images/MMgats (japan).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/209422578?uid=1' },
   { brand: 'Balenciaga', name: 'balenciaga double waist', cat: 'Pants', src: { type: 'taobao', id: '1009307628825' }, img: 'Images/Balenciaga double waist.png', qc: 'https://mvt-shop01.x.yupoo.com/albums/210269652?uid=1' },
   { brand: 'Raf Simons', name: 'Raf VIRGINA CREEPER (black)', cat: 'Accessories', src: { type: 'taobao', id: '994217483421' }, img: 'Images/Raf VIRGINA CREEPER (black).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/210303284?uid=1' },
   { brand: 'Raf Simons', name: 'Raf VIRGINA CREEPER (white)', cat: 'Accessories', src: { type: 'taobao', id: '994217483421' }, img: 'Images/Raf VIRGINA CREEPER (white).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/209271934?uid=1' },
@@ -464,8 +464,8 @@ var PRODUCTS = [
   { brand: 'Balenciaga', name: 'FORTINITE hoodie (red)', cat: 'Hoodies', src: { type: 'taobao', id: '1019256849284' }, img: 'Images/FORTINITE hoodie (red).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/219232353?uid=1' },
   { brand: 'Raf Simons', name: 'RAF vc hoodie', cat: 'Hoodies', src: { type: 'taobao', id: '1019256849284' }, img: 'Images/RAF vc hoodie.png', qc: 'https://mvt-shop01.x.yupoo.com/albums/219232323?uid=1' },
   { brand: 'Balenciaga', name: 'FORTNITE hoodie (white)', cat: 'Hoodies', src: { type: 'taobao', id: '1019256849284' }, img: 'Images/FORTNITE hoodie (white).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/219179709?uid=1' },
-  { brand: 'Maison Margiela', name: 'Mm future (white)', cat: 'Accessories', src: { type: 'taobao', id: '1019256849284' }, img: 'images/Mm future (white).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222223660?uid=1' },
-  { brand: 'Maison Margiela', name: 'Mm future (black)', cat: 'Accessories', src: { type: 'taobao', id: '1019256849284' }, img: 'images/Mm future (black).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222223764?uid=1' },
+  { brand: 'Maison Margiela', name: 'Mm future (white)', cat: 'Accessories', src: { type: 'taobao', id: '1019256849284' }, img: 'Images/Mm future (white).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222223660?uid=1' },
+  { brand: 'Maison Margiela', name: 'Mm future (black)', cat: 'Accessories', src: { type: 'taobao', id: '1019256849284' }, img: 'Images/Mm future (black).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222223764?uid=1' },
   { brand: 'Maison Margiela', name: 'MM gats (full black)', cat: 'Accessories', src: { type: 'taobao', id: '1027022473692' }, img: 'Images/MM gats (full black).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222748815?uid=1' },
   { brand: 'Maison Margiela', name: 'Mm gats (black brown)', cat: 'Accessories', src: { type: 'taobao', id: '1027022473692' }, img: 'Images/Mm gats (black brown).png', qc: 'https://mvt-shop01.x.yupoo.com/albums/222748785?uid=1' },
   { brand: 'Maison Margiela', name: 'Red gats', cat: 'Accessories', src: { type: 'taobao', id: '1027022473692' }, img: 'Images/Red gats.png', qc: 'https://mvt-shop01.x.yupoo.com/albums/221984943?uid=1' },
@@ -572,48 +572,3 @@ function openDetail(idx) {
   document.getElementById('dTags').innerHTML = (p.tags||[]).map(function(t){ return '<span class="d-tag">'+t+'</span>'; }).join('');
   document.getElementById('homepage').classList.add('hidden');
   document.getElementById('detailPage').classList.add('active');
-  window.scrollTo(0,0);
-}
-
-function closeDetail() {
-  document.getElementById('detailPage').classList.remove('active');
-  document.getElementById('homepage').classList.remove('hidden');
-  window.scrollTo(0,0);
-}
-
-function filterCat(cat) {
-  currentCat = cat;
-  document.querySelectorAll('.fbar .pill').forEach(function(p){ p.classList.toggle('active', p.dataset.cat === cat); });
-  renderGrid(); window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function filterBrand(brand) {
-  currentBrand = brand;
-  document.querySelectorAll('#brandBar .pill').forEach(function(p){ p.classList.remove('active'); });
-  var btn = document.getElementById('b-'+brand); if (btn) btn.classList.add('active');
-  renderGrid();
-}
-
-function showHome() {
-  closeDetail(); currentCat='All'; currentBrand='All';
-  document.getElementById('searchInput').value='';
-  document.querySelectorAll('.fbar .pill').forEach(function(p){ p.classList.toggle('active', p.dataset.cat==='All'); });
-  buildBrandFilters(); renderGrid();
-}
-
-function toggleTheme(){ document.getElementById('themeMenu').classList.toggle('open'); }
-function setTheme(t){
-  document.documentElement.setAttribute('data-theme', t==='red'?'':t);
-  document.getElementById('themeMenu').classList.remove('open');
-  try{ localStorage.setItem('cnfound-theme',t); }catch(e){}
-}
-document.addEventListener('click',function(e){ if(!e.target.closest('.theme-wrapper')) document.getElementById('themeMenu').classList.remove('open'); });
-document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeDetail(); });
-try{ var st=localStorage.getItem('cnfound-theme'); if(st&&st!=='red') setTheme(st); }catch(e){}
-
-buildBrandFilters();
-updateStats();
-renderGrid();
-</script>
-</body>
-</html>
