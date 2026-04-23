@@ -68,11 +68,8 @@
     .sec-head h2{font-family:'Bebas Neue',sans-serif;font-size:21px;letter-spacing:2px;color:var(--white)}
     .sec-head span{color:var(--text3);font-size:11px;font-weight:500;background:var(--bg3);padding:3px 11px;border-radius:50px;border:1px solid var(--border)}
     .grid{padding:4px 24px 80px;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:13px}
- .card{background:linear-gradient(135deg,rgba(20,10,40,0.85),rgba(10,10,30,0.9));border:1px solid rgba(255,255,255,0.08);border-radius:13px;overflow:hidden;cursor:pointer;transition:border-color .25s,transform .25s,box-shadow .25s;position:relative;}
-    .card::before{content:'';position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,100,255,0.07),rgba(100,150,255,0.07),rgba(100,255,200,0.07));opacity:0;transition:opacity .3s;pointer-events:none;z-index:0;}
-    .card:hover::before{opacity:1;}
+ .card{background:linear-gradient(135deg,rgba(20,10,40,0.85),rgba(10,10,30,0.9));border:1px solid rgba(255,255,255,0.08);border-radius:13px;overflow:hidden;cursor:pointer;transition:border-color .25s,transform .25s,box-shadow .25s;}
     .card:hover{border-color:rgba(180,120,255,0.5);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.6),0 0 20px rgba(120,80,255,0.2),0 0 0 1px rgba(180,120,255,0.3);}
-    .img-wrap,.pinfo,.vbtn,.badge,.qc-badge,.img-logo{position:relative;z-index:1;}
     .img-wrap{position:relative;overflow:hidden;background:#000}
     .pimg{width:100%;aspect-ratio:1;object-fit:cover;background:#000;display:block;transition:transform .35s}
     .card:hover .pimg{transform:scale(1.04)}
