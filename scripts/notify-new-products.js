@@ -78,16 +78,38 @@ function diffNewProducts(oldList, newList) {
   return newList.filter(p => !oldKeys.has(productKey(p)));
 }
 
+const SITE_BASE_URL = 'https://cnfound.com';
+
+function buildSiteImageUrl(imgPath) {
+  if (!imgPath) return null;
+  if (/^https?:\/\//.test(imgPath)) return imgPath; // already absolute
+  // encode each path segment so spaces/parens in filenames survive as a valid URL
+  const encodedPath = imgPath
+    .split('/')
+    .map(encodeURIComponent)
+    .join('/');
+  return `${SITE_BASE_URL}/${encodedPath}`;
+}
+
+function buildProductPageUrl(name) {
+  return `${SITE_BASE_URL}/?product=${encodeURIComponent(name)}`;
+}
+
 function toEmbed(p) {
+  const productUrl = buildProductPageUrl(p.name || '');
+  const imageUrl = buildSiteImageUrl(p.img);
+
   const embed = {
     title: `🆕 ${p.name || 'New item'}`,
+    url: productUrl, // clicking the title goes straight to the product on the site
     color: 0x5865f2,
     fields: [],
   };
   if (p.brand) embed.fields.push({ name: 'Brand', value: p.brand, inline: true });
   if (p.cat) embed.fields.push({ name: 'Category', value: p.cat, inline: true });
-  if (p.qc) embed.url = p.qc;
-  if (p.img && /^https?:\/\//.test(p.img)) embed.thumbnail = { url: p.img };
+  embed.fields.push({ name: 'View on site', value: `[Open product page](${productUrl})`, inline: true });
+  if (p.qc) embed.fields.push({ name: 'QC photos', value: `[View QC](${p.qc})`, inline: true });
+  if (imageUrl) embed.image = { url: imageUrl }; // full-size picture, not just a thumbnail
   return embed;
 }
 
@@ -167,4 +189,12 @@ if (require.main === module) {
   });
 }
 
-module.exports = { extractProductsArrayText, parseProducts, diffNewProducts, productKey };
+module.exports = {
+  extractProductsArrayText,
+  parseProducts,
+  diffNewProducts,
+  productKey,
+  toEmbed,
+  buildSiteImageUrl,
+  buildProductPageUrl,
+};
