@@ -1132,6 +1132,7 @@ function renderGrid() {
 
 var currentDetailIdx = -1;
 var recentlyViewed = [];
+var _savedScrollY = 0;
 
 function openDetail(idx) {
   var p = PRODUCTS[idx]; if (!p) return;
@@ -1187,6 +1188,7 @@ function openDetail(idx) {
   if (recentlyViewed.length > 8) recentlyViewed = recentlyViewed.slice(0, 8);
   renderRecentlyViewed();
 
+  _savedScrollY = window.scrollY;
   document.getElementById('homepage').classList.add('hidden');
   document.getElementById('detailPage').classList.add('active');
   window.scrollTo(0,0);
@@ -1247,7 +1249,7 @@ function updateFilterChips() {
 function closeDetail() {
   document.getElementById('detailPage').classList.remove('active');
   document.getElementById('homepage').classList.remove('hidden');
-  window.scrollTo(0,0);
+  window.scrollTo(0, _savedScrollY);
 }
 
 function filterCat(cat) {
