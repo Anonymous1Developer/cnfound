@@ -83,7 +83,11 @@ const SITE_BASE_URL = 'https://cnfound.com';
 function buildSiteImageUrl(imgPath) {
   if (!imgPath) return null;
   if (/^https?:\/\//.test(imgPath)) return imgPath; // already absolute
-  // encode each path segment so spaces/parens in filenames survive as a valid URL
+  // Use the optimized mid-size WebP version for Discord embeds
+  if (imgPath.startsWith('Images/')) {
+    const base = imgPath.replace(/^Images\//, '').replace(/\.[^.]+$/, '');
+    return `${SITE_BASE_URL}/images-opt/mid/${encodeURIComponent(base)}.webp`;
+  }
   const encodedPath = imgPath
     .split('/')
     .map(encodeURIComponent)
