@@ -1284,17 +1284,6 @@ updateStats();
 addCatCounts();
 renderGrid();
 
-// Deep-link support: ?product=<exact product name> auto-opens that item's detail modal.
-// Used by the Discord "new product" notifications to link straight to the item.
-(function openFromDeepLink() {
-  var params = new URLSearchParams(window.location.search);
-  var productParam = params.get('product');
-  if (!productParam) return;
-  var idx = PRODUCTS.findIndex(function (p) { return p.name === productParam; });
-  if (idx === -1) return;
-  openDetail(idx);
-})();
-
 
 
 
@@ -1639,6 +1628,17 @@ function closeLaunch() {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape' && document.getElementById('cartPanel').classList.contains('open')) closeCart();
 });
+
+// Deep-link support: ?product=<exact product name> auto-opens that item's detail modal.
+// Used by the Discord "new product" notifications to link straight to the item.
+(function openFromDeepLink() {
+  var params = new URLSearchParams(window.location.search);
+  var productParam = params.get('product');
+  if (!productParam) return;
+  var idx = PRODUCTS.findIndex(function (p) { return p.name === productParam; });
+  if (idx === -1) return;
+  openDetail(idx);
+})();
 
 </script>
 
