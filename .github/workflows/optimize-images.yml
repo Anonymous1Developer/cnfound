@@ -33,5 +33,6 @@ jobs:
             echo "No new images to optimize"
           else
             git commit -m "Auto-optimize new product images to WebP"
+            git pull --rebase origin main
             git push
           fi
