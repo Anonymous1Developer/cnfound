@@ -633,8 +633,12 @@ function platLink(plat, product) {
     return 'https://joyagoo.com/product?id=' + id + '&platform=' + jt + '&ref=300781254';
   }
   if (plat.id === 'litbuy') {
-    var lt = type === 'taobao' ? 'taobao' : type === 'weidian' ? 'weidian' : '1688';
-    return 'https://litbuy.com/item?url=https%3A%2F%2F' + lt + '.com%2Fitem.html%3FitemID%3D' + id + '&inviteCode=F2Y2AE9XY';
+    var sourceUrl = type === 'taobao'
+      ? 'https://item.taobao.com/item.htm?id=' + id
+      : type === '1688'
+      ? 'https://detail.1688.com/offer/' + id + '.html'
+      : 'https://weidian.com/item.html?itemID=' + id;
+    return 'https://litbuy.com/shop/details?url=' + encodeURIComponent(sourceUrl) + '&inviteCode=F2Y2AE9XY';
   }
   return '#';
 }
