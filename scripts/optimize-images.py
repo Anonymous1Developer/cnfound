@@ -45,7 +45,10 @@ for fname in sorted(os.listdir(SRC_DIR)):
 
     try:
         img = Image.open(src_path)
-        img = img.convert("RGB")  # handle RGBA PNGs and TIFFs
+        if img.mode == 'RGBA' or img.mode == 'PA':
+            pass  # keep alpha channel for transparent PNGs
+        else:
+            img = img.convert("RGB")
         orig_size = os.path.getsize(src_path)
 
         for out_path, max_dim in [(thumb_path, THUMB_MAX), (mid_path, MID_MAX)]:
